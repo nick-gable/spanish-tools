@@ -11,7 +11,7 @@ from random import random, randint
 
 from ratelimit import limits, sleep_and_retry
 
-SECRET_KEY = "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"
+SECRET_KEY = open('key.txt','r').read().strip()
 client = OpenAI(api_key=SECRET_KEY)
 
 P_TOPIC_WORD =  """
