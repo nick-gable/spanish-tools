@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="https://cdn.jsdelivr.net/highlight.js/latest/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/latest/styles/github.min.css">
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <title>Spanish Practice Tool</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Spanish Practice Tool</h1>
+        <ul class="list-group">
+            <li class="list-group-item bg-primary text-light">
+                <b>Configuration</b>
+            </li>
+            <li class="list-group-item">
+                <input type="text" class="form-control" placeholder="Topic of choice">
+                <input type="number" min="0" max="100" placeholder="Percent of English -> Spanish questions" class="form-control mt-2">
+                <a href="#" class="btn btn-primary mt-2">Begin session</a>
+            </li>
+        </ul>
+
+        <div class="alert alert-primary mt-2">
+            Please wait while the server generates the next question. <br>
+            <div class="spinner-border mt-2"></div>
+        </div>
+
+        <ul class="list-group mt-2">
+            <li class="list-group-item bg-success text-light">
+                <b>Spanish listening practice</b>
+            </li>
+            <li class="list-group-item">
+                Listen to the following audio, and attempt to discern what it is saying. When you have an answer in mind, click "Check answer".<br />
+                <audio controls class="mt-2"></audio><br>
+                <a href="#" class="btn btn-success mt-2">Check answer</a>
+            </li>
+        </ul>
+
+        <ul class="list-group mt-2">
+            <li class="list-group-item bg-warning">
+                <b>English to Spanish translation practice</b>
+            </li>
+            <li class="list-group-item">
+                Think about how you would translate the following sentence into Spanish - say it out loud if you can! When you have an answer in mind, click "Check answer". <br>
+                <code>English: The quick brown fox jumped over the lazy dog.</code><br>
+                <a href="#" class="btn btn-warning mt-2">Check answer</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
