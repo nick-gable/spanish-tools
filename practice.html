@@ -23,44 +23,112 @@
 <body>
     <div class="container mt-5">
         <h1>Spanish Practice Tool</h1>
-        <ul class="list-group">
+        <ul class="list-group" id="configuration">
             <li class="list-group-item bg-primary text-light">
                 <b>Configuration</b>
             </li>
             <li class="list-group-item">
-                <input type="text" class="form-control" placeholder="Topic of choice">
-                <input type="number" min="0" max="100" placeholder="Percent of English -> Spanish questions" class="form-control mt-2">
-                <a href="#" class="btn btn-primary mt-2">Begin session</a>
+                <input type="text" class="form-control" id="topic" placeholder="Topic of choice">
+                <input type="number" min="0" max="100" id="speaking-ratio" placeholder="Percent of English to Spanish questions (speaking practice)"
+                    class="form-control mt-2">
+                <a href="#" class="btn btn-primary mt-2" id="begin-session">Begin session</a>
             </li>
         </ul>
 
-        <div class="alert alert-primary mt-2">
+        <div class="alert alert-primary mt-2" id="waiting-message">
             Please wait while the server generates the next question. <br>
             <div class="spinner-border mt-2"></div>
         </div>
 
-        <ul class="list-group mt-2">
-            <li class="list-group-item bg-success text-light">
+        <ul class="list-group mt-2" id="listening-practice">
+            <li class="list-group-item bg-info text-light">
                 <b>Spanish listening practice</b>
             </li>
             <li class="list-group-item">
-                Listen to the following audio, and attempt to discern what it is saying. When you have an answer in mind, click "Check answer".<br />
-                <audio controls class="mt-2"></audio><br>
-                <a href="#" class="btn btn-success mt-2">Check answer</a>
+                Listen to the following audio, and attempt to discern what it is saying. When you have an answer in
+                mind, click "Check answer".<br />
+                <audio controls class="mt-2" id="audio" src="getAudio"></audio><br>
+                <a href="#" class="btn btn-info mt-2">Check answer</a>
             </li>
         </ul>
 
-        <ul class="list-group mt-2">
+        <ul class="list-group mt-2" id="translation-practice">
             <li class="list-group-item bg-warning">
                 <b>English to Spanish translation practice</b>
             </li>
             <li class="list-group-item">
-                Think about how you would translate the following sentence into Spanish - say it out loud if you can! When you have an answer in mind, click "Check answer". <br>
+                Think about how you would translate the following sentence into Spanish - say it out loud if you can!
+                When you have an answer in mind, click "Check answer". <br>
                 <code>English: The quick brown fox jumped over the lazy dog.</code><br>
                 <a href="#" class="btn btn-warning mt-2">Check answer</a>
             </li>
         </ul>
+
+        <ul class="list-group mt-2 mb-5" id="results">
+            <li class="list-group-item bg-success text-light">
+                <b>Results</b>
+            </li>
+            <li class="list-group-item">
+                <code>
+                    Spanish: Hay un perro en mi casa. <br />
+                    English: There is a dog in my house.
+                </code><br />
+                <p class="mt-2">
+                    Self-score your understanding of this question as a percent from 0 - 100. Then, enter any
+                    Spanish words or phrases (one per line) that you believe you need more work on, if any. For best
+                    results, only select 100 if you fully understood the entirety of the sentence, and write all words
+                    you had trouble with after each question.
+                </p>
+                <input type="number" class="form-control" min="0" max="100" placeholder="Percent understanding">
+                <textarea rows="5" class="form-control mt-2" placeholder="Words you need practice on (one per line)"></textarea>
+                <a href="#" class="mt-2 mr-2 btn btn-success">Submit and generate new question</a>
+                <a href="#" class="mt-2 btn btn-primary">Submit and exit / reconfigure</a>
+            </li>
+        </ul>
     </div>
+
+    <script>
+        // on load, hide everything except config
+        $("#listening-practice").hide();
+        $("#translation-practice").hide();
+        $("#waiting-message").hide();
+        $("#results").hide();
+
+        let topic = null;
+        let context = null;
+        let speakingRatio = null;
+
+        $("#begin-session").click(() => {
+            $("#configuration").hide();
+
+            topic = $("#topic").val();
+            speakingRatio = $("#speaking-ratio").val() / 100;
+            context = [];
+            sendRequest();
+        });
+
+        function sendRequest() {
+            $("#waiting-message").show();
+            let sendObject = {
+                'topic': topic,
+                'context': context,
+                'speakingRatio': speakingRatio
+            }
+
+            $.post("getContent", JSON.stringify(sendObject), (data) => {
+                $("#waiting-message").hide();
+
+                if (data.type == 'speak') {
+                    $("#translation-practice").show();
+                    // TODO continue this
+                } else {
+                    $("#listening-practice").show();
+                    $("#audio")[0].load();
+                }
+
+            }, 'json');
+        }
+    </script>
 </body>
 
 </html>

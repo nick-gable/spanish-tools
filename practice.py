@@ -7,6 +7,7 @@ Author: Nick Gable
 
 from openai import OpenAI
 from phone_numbers import say
+from gtts import gTTS
 from random import random, randint
 
 from ratelimit import limits, sleep_and_retry
@@ -60,6 +61,71 @@ def prompt(message: str, existing_messages=[]):
                                             ])
 
     return result.choices[0].message
+
+
+def get_content(topic, messages, speaking_ratio):
+    words = [] # list of (word,score) tuples (0->1 value indicating if it should be picked)
+    
+    try:
+        file = open(f'practice-{topic}.csv', 'r')
+        print("Topic has been visited prior, loading history from file")
+
+        for line in file.readlines():
+            line = line.strip().split(',')
+            words.append((line[0], float(line[1])))
+    except IOError:
+        print("First time on this topic, starting new topic file")
+
+    word = None
+    word_idx = None
+    if len(messages) == 0:
+        message = {'role': 'user', 'content': P_TOPIC_NWORD % (topic,) + " " + VARIATION_MESSAGE}
+    elif len(words) == 0:
+        message = {'role': 'user', 'content': REPEAT_MESSAGE}
+    else:
+        word = None
+        word_idx = None
+        while word is None:
+            word_idx = randint(0, len(words) - 1)
+            possible_word, score = words[randint(0, len(words) - 1)]
+            if random() < score:
+                word = possible_word
+        
+        message = {'role': 'user', 'content': REPEAT_NEW_WORD % (word,)}
+    
+    response = prompt(message, existing_messages=messages)
+
+    messages.append(message)
+    messages.append(dict(response))
+
+    if random() < speaking_ratio:
+        type = 'speak'
+    else:
+        type = 'listen'
+        tts = gTTS(text=response.content.split('\n')[0].split("Spanish: ")[1], lang='es')
+        tts.write_to_fp(open('output.mp3', 'wb'))
+    
+    return {
+        'type': type,
+        'messages': messages,
+        'word_idx': word_idx
+    }
+
+
+def update_words(score, new_words, word_idx, topic):
+    if score < 1:
+        for word in new_words:
+            words.append((word, 1-score))
+    elif len(words) > 0 and (word is not None):  # reduce chance of this word appearing again
+        words[word_idx] = (word, words[word_idx][1] / 2) # make it half as likely we encounter this word again
+        if words[word_idx][1] < 0.01:
+            # just delete it at this point
+            del words[word_idx]
+
+    # write out topics file
+    with open(f'practice-{topic}.csv', 'w') as file:
+        for (word, score) in words:
+            file.write(f'{word},{score}\n')
 
 
 if __name__ == "__main__":
