@@ -5,18 +5,35 @@ Author: Nick Gable (nick@gable.page)
 """
 
 from flask import Flask, request, send_file
+from flask_httpauth import HTTPBasicAuth
+from werkzeug.security import generate_password_hash, check_password_hash
 import practice
 import json
 
 app = Flask(__name__)
+auth = HTTPBasicAuth()
+
+users = {}
+with open('users.txt', 'r') as users_file:
+    for line in users_file.readlines():
+        users[line.strip().split()[0]] = line.strip().split()[1]
+
+
+@auth.verify_password
+def verify_password(username, password):
+    if username in users and \
+            check_password_hash(users.get(username), password):
+        return username
 
 
 @app.route("/")
+@auth.login_required
 def index():
     return open("practice.html").read()
 
 
 @app.route("/getContent", methods=['POST'])
+@auth.login_required
 def get_content():
     """
     Get content from the backend system, and return it to the frontend.
@@ -32,6 +49,7 @@ def get_content():
 
 
 @app.route("/updateWords", methods=['POST'])
+@auth.login_required
 def update_words():
     """
     Update internal words file based off of results from previous practice.
@@ -49,5 +67,6 @@ def update_words():
 
 
 @app.route("/getAudio")
+@auth.login_required
 def get_audio():
     return send_file("output.mp3")

@@ -4,3 +4,4 @@ pyaudio
 openai
 ratelimit
 flask
+Flask-HTTPAuth
