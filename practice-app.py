@@ -36,13 +36,14 @@ def update_words():
     """
     Update internal words file based off of results from previous practice.
     """
-    request_data = json.loads(request.get_json())
+    request_data = json.loads(request.get_data())
     topic = request_data['topic']
     words = request_data['words']  # list of strings
+    word = request_data['word']
     word_idx = request_data['word_idx']
     score = request_data['score']  # 0-1
 
-    practice.update_words(score, words, word_idx, topic)
+    practice.update_words(score, words, word, word_idx, topic)
 
     return {'success': True}
 

@@ -48,7 +48,7 @@
                 Listen to the following audio, and attempt to discern what it is saying. When you have an answer in
                 mind, click "Check answer".<br />
                 <audio controls class="mt-2" id="audio" src="getAudio"></audio><br>
-                <a href="#" class="btn btn-info mt-2">Check answer</a>
+                <a href="#" class="btn btn-info mt-2" id="check-answer-listening">Check answer</a>
             </li>
         </ul>
 
@@ -59,8 +59,8 @@
             <li class="list-group-item">
                 Think about how you would translate the following sentence into Spanish - say it out loud if you can!
                 When you have an answer in mind, click "Check answer". <br>
-                <code>English: The quick brown fox jumped over the lazy dog.</code><br>
-                <a href="#" class="btn btn-warning mt-2">Check answer</a>
+                <code id="translation-content">English: The quick brown fox jumped over the lazy dog.</code><br>
+                <a href="#" class="btn btn-warning mt-2" id="check-answer-translation">Check answer</a>
             </li>
         </ul>
 
@@ -69,7 +69,7 @@
                 <b>Results</b>
             </li>
             <li class="list-group-item">
-                <code>
+                <code id="answers">
                     Spanish: Hay un perro en mi casa. <br />
                     English: There is a dog in my house.
                 </code><br />
@@ -79,10 +79,10 @@
                     results, only select 100 if you fully understood the entirety of the sentence, and write all words
                     you had trouble with after each question.
                 </p>
-                <input type="number" class="form-control" min="0" max="100" placeholder="Percent understanding">
-                <textarea rows="5" class="form-control mt-2" placeholder="Words you need practice on (one per line)"></textarea>
-                <a href="#" class="mt-2 mr-2 btn btn-success">Submit and generate new question</a>
-                <a href="#" class="mt-2 btn btn-primary">Submit and exit / reconfigure</a>
+                <input type="number" class="form-control" min="0" max="100" placeholder="Percent understanding" id="score">
+                <textarea rows="5" class="form-control mt-2" placeholder="Words you need practice on (one per line)" id="help-words"></textarea>
+                <a href="#" class="mt-2 mr-2 btn btn-success" id="submit-generate">Submit and generate new question</a>
+                <a href="#" class="mt-2 btn btn-primary" id="submit-reconfigure">Submit and exit / reconfigure</a>
             </li>
         </ul>
     </div>
@@ -97,6 +97,8 @@
         let topic = null;
         let context = null;
         let speakingRatio = null;
+        let word = null;
+        let wordIdx = null;
 
         $("#begin-session").click(() => {
             $("#configuration").hide();
@@ -105,6 +107,30 @@
             speakingRatio = $("#speaking-ratio").val() / 100;
             context = [];
             sendRequest();
+        });
+
+        $("#check-answer-listening").click(() => {
+            $("#listening-practice").hide();
+            $("#results").show();
+        });
+
+        $("#check-answer-translation").click(() => {
+            $("#translation-practice").hide();
+            $("#results").show();
+        });
+
+        $("#submit-generate").click(() => {
+            sendUpdate(() => {
+                $("#results").hide();
+                sendRequest();
+            });
+        });
+
+        $("#submit-reconfigure").click(() => {
+            sendUpdate(() => {
+                $("#results").hide();
+                $("#configuration").show();
+            });
         });
 
         function sendRequest() {
@@ -118,15 +144,41 @@
             $.post("getContent", JSON.stringify(sendObject), (data) => {
                 $("#waiting-message").hide();
 
+                console.log(data);
+
+                $("#answers").html(data.messages.at(-1).content.replace("\n", "<br>"));
+                context = data.messages;
+                wordIdx = data.word_idx;
+                word = data.word;
+
                 if (data.type == 'speak') {
                     $("#translation-practice").show();
-                    // TODO continue this
+                    $("#translation-content").html("English:" + data.messages.at(-1).content.split("English:")[1]);
                 } else {
                     $("#listening-practice").show();
+                    
+                    $("#audio").attr("src", "getAudio?cb=" + new Date().getTime());
+                    $("#audio")[0].pause();
                     $("#audio")[0].load();
                 }
 
             }, 'json');
+        }
+
+        function sendUpdate(callback) {
+            let sendObject = {
+                'topic': topic,
+                'context': context,
+                'speakingRatio': speakingRatio,
+                'word': word,
+                'word_idx': wordIdx,
+                'words': $("#help-words").val().split('\n'),
+                'score': $("#score").val() / 100
+            };
+
+            $.post("updateWords", JSON.stringify(sendObject), callback, 'json');
+            $("#help-words").val('');
+            $("#score").val('');
         }
     </script>
 </body>
