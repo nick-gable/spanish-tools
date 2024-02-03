@@ -108,6 +108,8 @@ def get_content(topic, messages, speaking_ratio):
         type = 'listen'
         tts = gTTS(text=response.content.split('\n')[0].split("Spanish: ")[1], lang='es')
         tts.write_to_fp(open('output.mp3', 'wb'))
+        tts = gTTS(text=response.content.split('\n')[0].split("Spanish: ")[1], lang='es', slow=True)
+        tts.write_to_fp(open('outputSlow.mp3', 'wb'))
     
     return {
         'type': type,
@@ -142,6 +144,8 @@ def update_words(score, new_words, word, word_idx, topic):
     # write out topics file
     with open(f'practice-{topic}.csv', 'w', encoding='utf_8') as file:
         for (word, score) in words:
+            if len(word.strip()) == 0:
+                continue  # don't write out empty words
             file.write(f'{word},{score}\n')
 
 

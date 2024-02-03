@@ -70,3 +70,9 @@ def update_words():
 @auth.login_required
 def get_audio():
     return send_file("output.mp3")
+
+
+@app.route("/getAudioSlow")
+@auth.login_required
+def get_audio_slow():
+    return send_file("outputSlow.mp3")

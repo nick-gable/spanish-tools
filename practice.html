@@ -46,8 +46,9 @@
             </li>
             <li class="list-group-item">
                 Listen to the following audio, and attempt to discern what it is saying. When you have an answer in
-                mind, click "Check answer".<br />
+                mind, click "Check answer". The first audio player is at full speed, and the second is slower if desired.<br />
                 <audio controls class="mt-2" id="audio" src="getAudio"></audio><br>
+                <audio controls class="mt-2" id="audioSlow" src="getAudioSlow"></audio><br>
                 <a href="#" class="btn btn-info mt-2" id="check-answer-listening">Check answer</a>
             </li>
         </ul>
@@ -79,6 +80,7 @@
                     results, only select 100 if you fully understood the entirety of the sentence, and write all words
                     you had trouble with after each question.
                 </p>
+                <button class="btn btn-success mb-2" id="addSelection">Add selection to list of words</button>
                 <input type="number" class="form-control" min="0" max="100" placeholder="Percent understanding" id="score">
                 <textarea rows="5" class="form-control mt-2" placeholder="Words you need practice on (one per line)" id="help-words"></textarea>
                 <a href="#" class="mt-2 mr-2 btn btn-success" id="submit-generate">Submit and generate new question</a>
@@ -160,6 +162,10 @@
                     $("#audio").attr("src", "getAudio?cb=" + new Date().getTime());
                     $("#audio")[0].pause();
                     $("#audio")[0].load();
+
+                    $("#audioSlow").attr("src", "getAudioSlow?cb=" + new Date().getTime());
+                    $("#audioSlow")[0].pause();
+                    $("#audioSlow")[0].load();
                 }
 
             }, 'json');
@@ -180,6 +186,14 @@
             $("#help-words").val('');
             $("#score").val('');
         }
+
+        $("#addSelection").click(() => {
+            let selection = window.getSelection();
+            if (selection.toString().length > 0) {
+                $("#help-words").val($("#help-words").val() + selection.toString() + "\n");
+                selection.removeAllRanges();
+            }
+        });
     </script>
 </body>
 
