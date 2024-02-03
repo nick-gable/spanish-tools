@@ -1,6 +1,4 @@
 gTTS
-pygame
-pyaudio
 openai
 ratelimit
 flask

@@ -1,10 +1,10 @@
 from gtts import gTTS
-import pygame
+#import pygame
 from io import BytesIO
 from os import system
 from time import sleep
 from random import randint, random
-from num2words import num2words
+#from num2words import num2words
 import sys
 
 # probability that all four digits are said at the same time for last four
@@ -21,7 +21,7 @@ FAST_AFTER = 1
 INCORRECT_MULTIPLIER = 1
 CORRECT_MULTIPLIER = 1
 
-pygame.init()
+#pygame.init()
 
 
 def say(text, slow=False, lang='es'):

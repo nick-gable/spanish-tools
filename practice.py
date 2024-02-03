@@ -67,7 +67,7 @@ def get_content(topic, messages, speaking_ratio):
     words = [] # list of (word,score) tuples (0->1 value indicating if it should be picked)
     
     try:
-        file = open(f'practice-{topic}.csv', 'r')
+        file = open(f'practice-{topic}.csv', 'r', encoding="utf_8")
         print("Topic has been visited prior, loading history from file")
 
         for line in file.readlines():
@@ -93,7 +93,7 @@ def get_content(topic, messages, speaking_ratio):
         
         message = {'role': 'user', 'content': REPEAT_NEW_WORD % (word,)}
     
-    print(messages)
+    #print(messages)
     response = prompt(message, existing_messages=messages)
 
     messages.append(message)
@@ -121,7 +121,7 @@ def update_words(score, new_words, word, word_idx, topic):
     words = [] # list of (word,score) tuples (0->1 value indicating if it should be picked)
     
     try:
-        file = open(f'practice-{topic}.csv', 'r')
+        file = open(f'practice-{topic}.csv', 'r', encoding='utf_8')
         print("Topic has been visited prior, loading history from file")
 
         for line in file.readlines():
@@ -140,7 +140,7 @@ def update_words(score, new_words, word, word_idx, topic):
             del words[word_idx]
 
     # write out topics file
-    with open(f'practice-{topic}.csv', 'w') as file:
+    with open(f'practice-{topic}.csv', 'w', encoding='utf_8') as file:
         for (word, score) in words:
             file.write(f'{word},{score}\n')
 
@@ -152,7 +152,7 @@ if __name__ == "__main__":
     words = [] # list of (word,score) tuples (0->1 value indicating if it should be picked)
     
     try:
-        file = open(f'practice-{topic}.csv', 'r')
+        file = open(f'practice-{topic}.csv', 'r', encoding='utf_8')
         print("Topic has been visited prior, loading history from file")
 
         for line in file.readlines():
@@ -209,7 +209,7 @@ if __name__ == "__main__":
                 del words[word_idx]
 
         # write out topics file
-        with open(f'practice-{topic}.csv', 'w') as file:
+        with open(f'practice-{topic}.csv', 'w', encoding="utf_8") as file:
             for (word, score) in words:
                 file.write(f'{word},{score}\n')
 

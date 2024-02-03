@@ -1,0 +1,644 @@
+  File "/home/gablucxb/spanish/passenger_wsgi.py", line 11
+    from practice-app import app as application
+                 ^
+SyntaxError: invalid syntax
+  File "/home/gablucxb/spanish/passenger_wsgi.py", line 11
+    from practice-app import app as application
+                 ^
+SyntaxError: invalid syntax
+  File "/home/gablucxb/spanish/passenger_wsgi.py", line 11
+    from practice-app import app as application
+                 ^
+SyntaxError: invalid syntax
+  File "/home/gablucxb/spanish/passenger_wsgi.py", line 11
+    from practice-app import app as application
+                 ^
+SyntaxError: invalid syntax
+  File "/home/gablucxb/spanish/passenger_wsgi.py", line 11
+    from practice-app import app as application
+                 ^
+SyntaxError: invalid syntax
+  File "/home/gablucxb/spanish/passenger_wsgi.py", line 11
+    from practice-app import app as application
+                 ^
+SyntaxError: invalid syntax
+  File "/home/gablucxb/spanish/passenger_wsgi.py", line 11
+    from practice-app import app as application
+                 ^
+SyntaxError: invalid syntax
+  File "/home/gablucxb/spanish/passenger_wsgi.py", line 11
+    from practice-app import app as application
+                 ^
+SyntaxError: invalid syntax
+  File "/home/gablucxb/spanish/passenger_wsgi.py", line 11
+    from practice-app import app as application
+                 ^
+SyntaxError: invalid syntax
+  File "/home/gablucxb/spanish/passenger_wsgi.py", line 11
+    from practice-app import app as application
+                 ^
+SyntaxError: invalid syntax
+  File "/home/gablucxb/spanish/passenger_wsgi.py", line 11
+    from practice-app import app as application
+                 ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/home/gablucxb/spanish/passenger_wsgi.py", line 11, in <module>
+    from practiceapp import app as application
+  File "/home/gablucxb/spanish/practiceapp.py", line 10, in <module>
+    import practice
+  File "/home/gablucxb/spanish/practice.py", line 9, in <module>
+    from phone_numbers import say
+  File "/home/gablucxb/spanish/phone_numbers.py", line 1, in <module>
+    from gtts import gTTS
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/gtts/__init__.py", line 3, in <module>
+    from .tts import gTTS, gTTSError
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/gtts/tts.py", line 8, in <module>
+    import requests
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/requests/__init__.py", line 43, in <module>
+    import urllib3
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/urllib3/__init__.py", line 42, in <module>
+    raise ImportError(
+ImportError: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'OpenSSL 1.0.2u-fips  20 Dec 2019'. See: https://github.com/urllib3/urllib3/issues/2168
+Traceback (most recent call last):
+  File "/home/gablucxb/spanish/passenger_wsgi.py", line 11, in <module>
+    from practiceapp import app as application
+  File "/home/gablucxb/spanish/practiceapp.py", line 10, in <module>
+    import practice
+  File "/home/gablucxb/spanish/practice.py", line 9, in <module>
+    from phone_numbers import say
+  File "/home/gablucxb/spanish/phone_numbers.py", line 1, in <module>
+    from gtts import gTTS
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/gtts/__init__.py", line 3, in <module>
+    from .tts import gTTS, gTTSError
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/gtts/tts.py", line 8, in <module>
+    import requests
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/requests/__init__.py", line 43, in <module>
+    import urllib3
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/urllib3/__init__.py", line 42, in <module>
+    raise ImportError(
+ImportError: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'OpenSSL 1.0.2u-fips  20 Dec 2019'. See: https://github.com/urllib3/urllib3/issues/2168
+Traceback (most recent call last):
+  File "/home/gablucxb/spanish/passenger_wsgi.py", line 11, in <module>
+    from practiceapp import app as application
+  File "/home/gablucxb/spanish/practiceapp.py", line 10, in <module>
+    import practice
+  File "/home/gablucxb/spanish/practice.py", line 9, in <module>
+    from phone_numbers import say
+  File "/home/gablucxb/spanish/phone_numbers.py", line 1, in <module>
+    from gtts import gTTS
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/gtts/__init__.py", line 3, in <module>
+    from .tts import gTTS, gTTSError
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/gtts/tts.py", line 8, in <module>
+    import requests
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/requests/__init__.py", line 43, in <module>
+    import urllib3
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/urllib3/__init__.py", line 42, in <module>
+    raise ImportError(
+ImportError: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'OpenSSL 1.0.2u-fips  20 Dec 2019'. See: https://github.com/urllib3/urllib3/issues/2168
+Traceback (most recent call last):
+  File "/home/gablucxb/spanish/passenger_wsgi.py", line 11, in <module>
+    from practiceapp import app as application
+  File "/home/gablucxb/spanish/practiceapp.py", line 10, in <module>
+    import practice
+  File "/home/gablucxb/spanish/practice.py", line 9, in <module>
+    from phone_numbers import say
+  File "/home/gablucxb/spanish/phone_numbers.py", line 1, in <module>
+    from gtts import gTTS
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/gtts/__init__.py", line 3, in <module>
+    from .tts import gTTS, gTTSError
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/gtts/tts.py", line 8, in <module>
+    import requests
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/requests/__init__.py", line 43, in <module>
+    import urllib3
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/urllib3/__init__.py", line 42, in <module>
+    raise ImportError(
+ImportError: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'OpenSSL 1.0.2u-fips  20 Dec 2019'. See: https://github.com/urllib3/urllib3/issues/2168
+Traceback (most recent call last):
+  File "/home/gablucxb/spanish/passenger_wsgi.py", line 11, in <module>
+    from practiceapp import app as application
+  File "/home/gablucxb/spanish/practiceapp.py", line 10, in <module>
+    import practice
+  File "/home/gablucxb/spanish/practice.py", line 9, in <module>
+    from phone_numbers import say
+  File "/home/gablucxb/spanish/phone_numbers.py", line 1, in <module>
+    from gtts import gTTS
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/gtts/__init__.py", line 3, in <module>
+    from .tts import gTTS, gTTSError
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/gtts/tts.py", line 8, in <module>
+    import requests
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/requests/__init__.py", line 43, in <module>
+    import urllib3
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/urllib3/__init__.py", line 20, in <module>
+    from .util.url import get_host
+ImportError: cannot import name 'get_host' from 'urllib3.util.url' (/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/urllib3/util/url.py)
+Traceback (most recent call last):
+  File "/home/gablucxb/spanish/passenger_wsgi.py", line 11, in <module>
+    from practiceapp import app as application
+  File "/home/gablucxb/spanish/practiceapp.py", line 10, in <module>
+    import practice
+  File "/home/gablucxb/spanish/practice.py", line 9, in <module>
+    from phone_numbers import say
+  File "/home/gablucxb/spanish/phone_numbers.py", line 1, in <module>
+    from gtts import gTTS
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/gtts/__init__.py", line 3, in <module>
+    from .tts import gTTS, gTTSError
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/gtts/tts.py", line 8, in <module>
+    import requests
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/requests/__init__.py", line 43, in <module>
+    import urllib3
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/urllib3/__init__.py", line 42, in <module>
+    raise ImportError(
+ImportError: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'OpenSSL 1.0.2u-fips  20 Dec 2019'. See: https://github.com/urllib3/urllib3/issues/2168
+Traceback (most recent call last):
+  File "/home/gablucxb/spanish/passenger_wsgi.py", line 11, in <module>
+    from practiceapp import app as application
+  File "/home/gablucxb/spanish/practiceapp.py", line 10, in <module>
+    import practice
+  File "/home/gablucxb/spanish/practice.py", line 9, in <module>
+    from phone_numbers import say
+  File "/home/gablucxb/spanish/phone_numbers.py", line 1, in <module>
+    from gtts import gTTS
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/gtts/__init__.py", line 3, in <module>
+    from .tts import gTTS, gTTSError
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/gtts/tts.py", line 8, in <module>
+    import requests
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/requests/__init__.py", line 43, in <module>
+    import urllib3
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/urllib3/__init__.py", line 42, in <module>
+    raise ImportError(
+ImportError: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'OpenSSL 1.0.2u-fips  20 Dec 2019'. See: https://github.com/urllib3/urllib3/issues/2168
+[2024-02-01 14:35:03,050] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask_httpauth.py", line 161, in decorated
+    user = self.authenticate(auth, password)
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask_httpauth.py", line 245, in authenticate
+    return self.ensure_sync(self.verify_password_callback)(
+  File "/home/gablucxb/spanish/practiceapp.py", line 25, in verify_password
+    check_password_hash(users.get(username), password):
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/werkzeug/security.py", line 124, in check_password_hash
+    return hmac.compare_digest(_hash_internal(method, salt, password)[0], hashval)
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/werkzeug/security.py", line 43, in _hash_internal
+    hashlib.scrypt(password, salt=salt, n=n, r=r, p=p, maxmem=maxmem).hex(),
+AttributeError: module 'hashlib' has no attribute 'scrypt'
+[2024-02-01 14:36:55,290] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask_httpauth.py", line 161, in decorated
+    user = self.authenticate(auth, password)
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask_httpauth.py", line 245, in authenticate
+    return self.ensure_sync(self.verify_password_callback)(
+  File "/home/gablucxb/spanish/practiceapp.py", line 25, in verify_password
+    check_password_hash(users.get(username), password):
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/werkzeug/security.py", line 124, in check_password_hash
+    return hmac.compare_digest(_hash_internal(method, salt, password)[0], hashval)
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/werkzeug/security.py", line 43, in _hash_internal
+    hashlib.scrypt(password, salt=salt, n=n, r=r, p=p, maxmem=maxmem).hex(),
+AttributeError: module 'hashlib' has no attribute 'scrypt'
+[2024-02-01 14:40:50,208] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask_httpauth.py", line 161, in decorated
+    user = self.authenticate(auth, password)
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask_httpauth.py", line 245, in authenticate
+    return self.ensure_sync(self.verify_password_callback)(
+  File "/home/gablucxb/spanish/practiceapp.py", line 25, in verify_password
+    check_password_hash(users.get(username), password, method='pbkdf2'):
+TypeError: check_password_hash() got an unexpected keyword argument 'method'
+[2024-02-01 14:41:56,561] ERROR in app: Exception on /getAudio [GET]
+Traceback (most recent call last):
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask_httpauth.py", line 174, in decorated
+    return self.ensure_sync(f)(*args, **kwargs)
+  File "/home/gablucxb/spanish/practiceapp.py", line 72, in get_audio
+    return send_file("output.mp3")
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/helpers.py", line 499, in send_file
+    return werkzeug.utils.send_file(  # type: ignore[return-value]
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/werkzeug/utils.py", line 427, in send_file
+    stat = os.stat(path)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/gablucxb/spanish/output.mp3'
+[2024-02-01 14:44:46,933] ERROR in app: Exception on /getContent [POST]
+Traceback (most recent call last):
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask_httpauth.py", line 174, in decorated
+    return self.ensure_sync(f)(*args, **kwargs)
+  File "/home/gablucxb/spanish/practiceapp.py", line 48, in get_content
+    return practice.get_content(topic, context, speaking_ratio)
+  File "/home/gablucxb/spanish/practice.py", line 96, in get_content
+    print(messages)
+UnicodeEncodeError: 'ascii' codec can't encode character '\xf3' in position 742: ordinal not in range(128)
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[{'content': "\nPlease respond with one sentence in Spanish on the topic 'food'. \nAfter this, please respond with the same sentence in English. \nFormat your response as two lines, the first being 'Spanish: ' followed by the Spanish sentence, \nthe second being 'English: ' followed by the English sentence.\n \nWhen prompted repeatedly, please vary your responses.\n", 'role': 'user'}, {'content': 'Spanish: Me encanta comer pizza los viernes por la noche.\nEnglish: I love eating pizza on Friday nights.', 'role': 'assistant'}, {'content': "Please generate another unique response to the previous prompt, this time making sure to use any form of the word or phrase 'por la noche'.", 'role': 'user'}, {'content': 'Spanish: Siempre prefiero cenar por la noche.\nEnglish: I always prefer to have dinner in the evening.', 'role': 'assistant'}]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[{'content': "\nPlease respond with one sentence in Spanish on the topic 'food'. \nAfter this, please respond with the same sentence in English. \nFormat your response as two lines, the first being 'Spanish: ' followed by the Spanish sentence, \nthe second being 'English: ' followed by the English sentence.\n \nWhen prompted repeatedly, please vary your responses.\n", 'role': 'user'}, {'content': 'Spanish: Me encanta comer pizza los fines de semana.\nEnglish: I love eating pizza on weekends.', 'role': 'assistant'}]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+First time on this topic, starting new topic file
+[]
+First time on this topic, starting new topic file
+Topic has been visited prior, loading history from file
+[{'content': "\nPlease respond with one sentence in Spanish on the topic 'food'. \nAfter this, please respond with the same sentence in English. \nFormat your response as two lines, the first being 'Spanish: ' followed by the Spanish sentence, \nthe second being 'English: ' followed by the English sentence.\n \nWhen prompted repeatedly, please vary your responses.\n", 'role': 'user'}, {'content': 'Spanish: Me encanta comer pizza los viernes por la noche.\nEnglish: I love eating pizza on Friday nights.', 'role': 'assistant'}]
+Topic has been visited prior, loading history from file
+[]
+[2024-02-01 16:39:00,916] ERROR in app: Exception on /getContent [POST]
+Traceback (most recent call last):
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask_httpauth.py", line 174, in decorated
+    return self.ensure_sync(f)(*args, **kwargs)
+  File "/home/gablucxb/spanish/practiceapp.py", line 48, in get_content
+    return practice.get_content(topic, context, speaking_ratio)
+  File "/home/gablucxb/spanish/practice.py", line 96, in get_content
+    print(messages)
+UnicodeEncodeError: 'ascii' codec can't encode character '\xf1' in position 1321: ordinal not in range(128)
+Topic has been visited prior, loading history from file
+[]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[{'content': "\nPlease respond with one sentence in Spanish on the topic 'food'. \nAfter this, please respond with the same sentence in English. \nFormat your response as two lines, the first being 'Spanish: ' followed by the Spanish sentence, \nthe second being 'English: ' followed by the English sentence.\n \nWhen prompted repeatedly, please vary your responses.\n", 'role': 'user'}, {'content': 'Spanish: Me encanta comer pizza.\nEnglish: I love eating pizza.', 'role': 'assistant'}]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[{'content': "\nPlease respond with one sentence in Spanish on the topic 'food'. \nAfter this, please respond with the same sentence in English. \nFormat your response as two lines, the first being 'Spanish: ' followed by the Spanish sentence, \nthe second being 'English: ' followed by the English sentence.\n \nWhen prompted repeatedly, please vary your responses.\n", 'role': 'user'}, {'content': 'Spanish: Me encanta comer pizza.\nEnglish: I love eating pizza.', 'role': 'assistant'}, {'content': "Please generate another unique response to the previous prompt, this time making sure to use any form of the word or phrase 'por la noche'.", 'role': 'user'}, {'content': 'Spanish: Me gusta comer frutas por la noche.\nEnglish: I like eating fruits at night.', 'role': 'assistant'}]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[{'content': "\nPlease respond with one sentence in Spanish on the topic 'food'. \nAfter this, please respond with the same sentence in English. \nFormat your response as two lines, the first being 'Spanish: ' followed by the Spanish sentence, \nthe second being 'English: ' followed by the English sentence.\n \nWhen prompted repeatedly, please vary your responses.\n", 'role': 'user'}, {'content': 'Spanish: Me encanta comer pizza.\nEnglish: I love eating pizza.', 'role': 'assistant'}, {'content': "Please generate another unique response to the previous prompt, this time making sure to use any form of the word or phrase 'por la noche'.", 'role': 'user'}, {'content': 'Spanish: Me gusta comer frutas por la noche.\nEnglish: I like eating fruits at night.', 'role': 'assistant'}, {'content': "Please generate another unique response to the previous prompt, this time making sure to use any form of the word or phrase 'por la noche'.", 'role': 'user'}, {'content': 'Spanish: Prefiero cenar ligero por la noche.\nEnglish: I prefer to have a light dinner at night.', 'role': 'assistant'}]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[{'content': "\nPlease respond with one sentence in Spanish on the topic 'food'. \nAfter this, please respond with the same sentence in English. \nFormat your response as two lines, the first being 'Spanish: ' followed by the Spanish sentence, \nthe second being 'English: ' followed by the English sentence.\n \nWhen prompted repeatedly, please vary your responses.\n", 'role': 'user'}, {'content': 'Spanish: Me encanta comer sushi.\nEnglish: I love eating sushi.', 'role': 'assistant'}]
+[2024-02-01 18:23:31,874] ERROR in app: Exception on /getContent [POST]
+Traceback (most recent call last):
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask_httpauth.py", line 174, in decorated
+    return self.ensure_sync(f)(*args, **kwargs)
+  File "/home/gablucxb/spanish/practiceapp.py", line 48, in get_content
+    return practice.get_content(topic, context, speaking_ratio)
+  File "/home/gablucxb/spanish/practice.py", line 96, in get_content
+    print(messages)
+UnicodeEncodeError: 'ascii' codec can't encode character '\xed' in position 441: ordinal not in range(128)
+Topic has been visited prior, loading history from file
+[]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[{'content': "\nPlease respond with one sentence in Spanish on the topic 'food'. \nAfter this, please respond with the same sentence in English. \nFormat your response as two lines, the first being 'Spanish: ' followed by the Spanish sentence, \nthe second being 'English: ' followed by the English sentence.\n \nWhen prompted repeatedly, please vary your responses.\n", 'role': 'user'}, {'content': 'Spanish: Me encanta comer pizza los viernes por la noche.\n\nEnglish: I love eating pizza on Friday nights.', 'role': 'assistant'}]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[{'content': "\nPlease respond with one sentence in Spanish on the topic 'food'. \nAfter this, please respond with the same sentence in English. \nFormat your response as two lines, the first being 'Spanish: ' followed by the Spanish sentence, \nthe second being 'English: ' followed by the English sentence.\n \nWhen prompted repeatedly, please vary your responses.\n", 'role': 'user'}, {'content': 'Spanish: Me encanta comer pizza los viernes por la noche.\n\nEnglish: I love eating pizza on Friday nights.', 'role': 'assistant'}, {'content': "Please generate another unique response to the previous prompt, this time making sure to use any form of the word or phrase 'disfruto'.", 'role': 'user'}, {'content': 'Spanish: Disfruto mucho de probar comida nueva de diferentes culturas.\n\nEnglish: I really enjoy trying new food from different cultures.', 'role': 'assistant'}]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[{'content': "\nPlease respond with one sentence in Spanish on the topic 'food'. \nAfter this, please respond with the same sentence in English. \nFormat your response as two lines, the first being 'Spanish: ' followed by the Spanish sentence, \nthe second being 'English: ' followed by the English sentence.\n \nWhen prompted repeatedly, please vary your responses.\n", 'role': 'user'}, {'content': 'Spanish: Me encanta comer pizza los viernes por la noche.\n\nEnglish: I love eating pizza on Friday nights.', 'role': 'assistant'}, {'content': "Please generate another unique response to the previous prompt, this time making sure to use any form of the word or phrase 'disfruto'.", 'role': 'user'}, {'content': 'Spanish: Disfruto mucho de probar comida nueva de diferentes culturas.\n\nEnglish: I really enjoy trying new food from different cultures.', 'role': 'assistant'}, {'content': "Please generate another unique response to the previous prompt, this time making sure to use any form of the word or phrase 'disfruto'.", 'role': 'user'}, {'content': 'Spanish: Disfruto preparando comida casera para mi familia.\n\nEnglish: I enjoy cooking homemade food for my family.', 'role': 'assistant'}]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[{'content': "\nPlease respond with one sentence in Spanish on the topic 'food'. \nAfter this, please respond with the same sentence in English. \nFormat your response as two lines, the first being 'Spanish: ' followed by the Spanish sentence, \nthe second being 'English: ' followed by the English sentence.\n \nWhen prompted repeatedly, please vary your responses.\n", 'role': 'user'}, {'content': 'Spanish: Me encanta comer pizza los viernes por la noche.\n\nEnglish: I love eating pizza on Friday nights.', 'role': 'assistant'}, {'content': "Please generate another unique response to the previous prompt, this time making sure to use any form of the word or phrase 'disfruto'.", 'role': 'user'}, {'content': 'Spanish: Disfruto mucho de probar comida nueva de diferentes culturas.\n\nEnglish: I really enjoy trying new food from different cultures.', 'role': 'assistant'}, {'content': "Please generate another unique response to the previous prompt, this time making sure to use any form of the word or phrase 'disfruto'.", 'role': 'user'}, {'content': 'Spanish: Disfruto preparando comida casera para mi familia.\n\nEnglish: I enjoy cooking homemade food for my family.', 'role': 'assistant'}, {'content': "Please generate another unique response to the previous prompt, this time making sure to use any form of the word or phrase 'ligero'.", 'role': 'user'}, {'content': 'Spanish: Me gusta comer algo ligero para la cena.\n\nEnglish: I like eating something light for dinner.', 'role': 'assistant'}]
+Topic has been visited prior, loading history from file
+[2024-02-01 19:35:50,488] ERROR in app: Exception on /getContent [POST]
+Traceback (most recent call last):
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask_httpauth.py", line 174, in decorated
+    return self.ensure_sync(f)(*args, **kwargs)
+  File "/home/gablucxb/spanish/practiceapp.py", line 48, in get_content
+    return practice.get_content(topic, context, speaking_ratio)
+  File "/home/gablucxb/spanish/practice.py", line 96, in get_content
+    print(messages)
+UnicodeEncodeError: 'ascii' codec can't encode character '\xfa' in position 414: ordinal not in range(128)
+[2024-02-01 19:36:39,838] ERROR in app: Exception on /getContent [POST]
+Traceback (most recent call last):
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask_httpauth.py", line 174, in decorated
+    return self.ensure_sync(f)(*args, **kwargs)
+  File "/home/gablucxb/spanish/practiceapp.py", line 48, in get_content
+    return practice.get_content(topic, context, speaking_ratio)
+  File "/home/gablucxb/spanish/practice.py", line 96, in get_content
+    print(messages)
+UnicodeEncodeError: 'ascii' codec can't encode character '\xfa' in position 414: ordinal not in range(128)
+[2024-02-01 19:37:20,315] ERROR in app: Exception on /getContent [POST]
+Traceback (most recent call last):
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask_httpauth.py", line 174, in decorated
+    return self.ensure_sync(f)(*args, **kwargs)
+  File "/home/gablucxb/spanish/practiceapp.py", line 48, in get_content
+    return practice.get_content(topic, context, speaking_ratio)
+  File "/home/gablucxb/spanish/practice.py", line 96, in get_content
+    print(messages)
+UnicodeEncodeError: 'ascii' codec can't encode character '\xfa' in position 414: ordinal not in range(128)
+[2024-02-01 19:38:02,504] ERROR in app: Exception on /getContent [POST]
+Traceback (most recent call last):
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask_httpauth.py", line 174, in decorated
+    return self.ensure_sync(f)(*args, **kwargs)
+  File "/home/gablucxb/spanish/practiceapp.py", line 48, in get_content
+    return practice.get_content(topic, context, speaking_ratio)
+  File "/home/gablucxb/spanish/practice.py", line 96, in get_content
+    print(messages)
+UnicodeEncodeError: 'ascii' codec can't encode character '\xfa' in position 414: ordinal not in range(128)
+First time on this topic, starting new topic file
+[]
+First time on this topic, starting new topic file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[2024-02-01 23:05:09,335] ERROR in app: Exception on /getContent [POST]
+Traceback (most recent call last):
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask_httpauth.py", line 174, in decorated
+    return self.ensure_sync(f)(*args, **kwargs)
+  File "/home/gablucxb/spanish/practiceapp.py", line 48, in get_content
+    return practice.get_content(topic, context, speaking_ratio)
+  File "/home/gablucxb/spanish/practice.py", line 96, in get_content
+    print(messages)
+UnicodeEncodeError: 'ascii' codec can't encode character '\xfa' in position 414: ordinal not in range(128)
+Topic has been visited prior, loading history from file
+[]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[{'content': "\nPlease respond with one sentence in Spanish on the topic 'food'. \nAfter this, please respond with the same sentence in English. \nFormat your response as two lines, the first being 'Spanish: ' followed by the Spanish sentence, \nthe second being 'English: ' followed by the English sentence.\n \nWhen prompted repeatedly, please vary your responses.\n", 'role': 'user'}, {'content': 'Spanish: Me gusta comer pizza los fines de semana.\nEnglish: I enjoy eating pizza on the weekends.', 'role': 'assistant'}]
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+[{'content': "\nPlease respond with one sentence in Spanish on the topic 'food'. \nAfter this, please respond with the same sentence in English. \nFormat your response as two lines, the first being 'Spanish: ' followed by the Spanish sentence, \nthe second being 'English: ' followed by the English sentence.\n \nWhen prompted repeatedly, please vary your responses.\n", 'role': 'user'}, {'content': 'Spanish: Me gusta comer pizza los fines de semana.\nEnglish: I enjoy eating pizza on the weekends.', 'role': 'assistant'}, {'content': "Please generate another unique response to the previous prompt, this time making sure to use any form of the word or phrase 'algo'.", 'role': 'user'}, {'content': 'Spanish: Siempre me gusta probar algo nuevo en los restaurantes.\nEnglish: I always enjoy trying something new at restaurants.', 'role': 'assistant'}]
+Topic has been visited prior, loading history from file
+[2024-02-02 10:13:13,634] ERROR in app: Exception on /updateWords [POST]
+Traceback (most recent call last):
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/gablucxb/virtualenv/spanish/3.9/lib/python3.9/site-packages/flask_httpauth.py", line 174, in decorated
+    return self.ensure_sync(f)(*args, **kwargs)
+  File "/home/gablucxb/spanish/practiceapp.py", line 64, in update_words
+    practice.update_words(score, words, word, word_idx, topic)
+  File "/home/gablucxb/spanish/practice.py", line 145, in update_words
+    file.write(f'{word},{score}\n')
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 7-8: ordinal not in range(128)
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+First time on this topic, starting new topic file
+First time on this topic, starting new topic file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+First time on this topic, starting new topic file
+First time on this topic, starting new topic file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
+Topic has been visited prior, loading history from file
